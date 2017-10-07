@@ -57,10 +57,18 @@ try:
     parsed = json.loads(data)
     # print ("Response:")
     # print (json.dumps(parsed, sort_keys=True, indent=2))
+    print(parsed)
     tags = parsed["description"]["tags"]
+    print("TAGS: ")
+    print(tags)
+    caption = parsed['description']['captions'][0]['text']
+    print(caption)
+
     stringTags = ""
     for tag in tags:
-        stringTags = stringTags + " " + tag
+        stringTags = stringTags + tag + " "
+    stringTags += caption
+    print(stringTags)
     results = analyze_tone(stringTags)
     if results != False:
         parsed = json.loads(results)
