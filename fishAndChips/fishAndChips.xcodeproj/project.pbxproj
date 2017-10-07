@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFEF37D61F88AD8C0028B68F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF37D51F88AD8C0028B68F /* AppDelegate.swift */; };
+		CFEF37D81F88AD8C0028B68F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF37D71F88AD8C0028B68F /* ViewController.swift */; };
+		CFEF37DB1F88AD8C0028B68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFEF37D91F88AD8C0028B68F /* Main.storyboard */; };
+		CFEF37DD1F88AD8C0028B68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFEF37DC1F88AD8C0028B68F /* Assets.xcassets */; };
+		CFEF37E01F88AD8C0028B68F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFEF37DE1F88AD8C0028B68F /* LaunchScreen.storyboard */; };
+		CFEF37EB1F88AD8C0028B68F /* fishAndChipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF37EA1F88AD8C0028B68F /* fishAndChipsTests.swift */; };
+		CFEF37F61F88AD8C0028B68F /* fishAndChipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF37F51F88AD8C0028B68F /* fishAndChipsUITests.swift */; };
+		CFEF380B1F88B2420028B68F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF380A1F88B2420028B68F /* AVFoundation.framework */; };
+		CFEF380D1F88B2580028B68F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF380C1F88B2580028B68F /* SystemConfiguration.framework */; };
+		CFEF38111F88B2900028B68F /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF380E1F88B2900028B68F /* SpotifyAudioPlayback.framework */; };
+		CFEF38121F88B2900028B68F /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF380F1F88B2900028B68F /* SpotifyAuthentication.framework */; };
+		CFEF38131F88B2900028B68F /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF38101F88B2900028B68F /* SpotifyMetadata.framework */; };
+		CFEF38171F88B5E40028B68F /* BridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEF38161F88B5E40028B68F /* BridgeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFEF37E71F88AD8C0028B68F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFEF37CA1F88AD8C0028B68F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFEF37D11F88AD8C0028B68F;
+			remoteInfo = fishAndChips;
+		};
+		CFEF37F21F88AD8C0028B68F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFEF37CA1F88AD8C0028B68F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFEF37D11F88AD8C0028B68F;
+			remoteInfo = fishAndChips;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFEF37D21F88AD8C0028B68F /* fishAndChips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fishAndChips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEF37D51F88AD8C0028B68F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFEF37D71F88AD8C0028B68F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFEF37DA1F88AD8C0028B68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFEF37DC1F88AD8C0028B68F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFEF37DF1F88AD8C0028B68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFEF37E11F88AD8C0028B68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFEF37E61F88AD8C0028B68F /* fishAndChipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fishAndChipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEF37EA1F88AD8C0028B68F /* fishAndChipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fishAndChipsTests.swift; sourceTree = "<group>"; };
+		CFEF37EC1F88AD8C0028B68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFEF37F11F88AD8C0028B68F /* fishAndChipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fishAndChipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEF37F51F88AD8C0028B68F /* fishAndChipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fishAndChipsUITests.swift; sourceTree = "<group>"; };
+		CFEF37F71F88AD8C0028B68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFEF380A1F88B2420028B68F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CFEF380C1F88B2580028B68F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CFEF380E1F88B2900028B68F /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAudioPlayback.framework; path = "../../../../Downloads/ios-sdk-master/SpotifyAudioPlayback.framework"; sourceTree = "<group>"; };
+		CFEF380F1F88B2900028B68F /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = "../../../../Downloads/ios-sdk-master/SpotifyAuthentication.framework"; sourceTree = "<group>"; };
+		CFEF38101F88B2900028B68F /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyMetadata.framework; path = "../../../../Downloads/ios-sdk-master/SpotifyMetadata.framework"; sourceTree = "<group>"; };
+		CFEF38141F88B5E40028B68F /* fishAndChips-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fishAndChips-Bridging-Header.h"; sourceTree = "<group>"; };
+		CFEF38151F88B5E40028B68F /* BridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeViewController.h; sourceTree = "<group>"; };
+		CFEF38161F88B5E40028B68F /* BridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFEF37CF1F88AD8C0028B68F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEF38111F88B2900028B68F /* SpotifyAudioPlayback.framework in Frameworks */,
+				CFEF38121F88B2900028B68F /* SpotifyAuthentication.framework in Frameworks */,
+				CFEF38131F88B2900028B68F /* SpotifyMetadata.framework in Frameworks */,
+				CFEF380D1F88B2580028B68F /* SystemConfiguration.framework in Frameworks */,
+				CFEF380B1F88B2420028B68F /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEF37E31F88AD8C0028B68F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEF37EE1F88AD8C0028B68F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFEF37C91F88AD8C0028B68F = {
+			isa = PBXGroup;
+			children = (
+				CFEF37D41F88AD8C0028B68F /* fishAndChips */,
+				CFEF37E91F88AD8C0028B68F /* fishAndChipsTests */,
+				CFEF37F41F88AD8C0028B68F /* fishAndChipsUITests */,
+				CFEF37D31F88AD8C0028B68F /* Products */,
+				CFEF38091F88B2410028B68F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFEF37D31F88AD8C0028B68F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFEF37D21F88AD8C0028B68F /* fishAndChips.app */,
+				CFEF37E61F88AD8C0028B68F /* fishAndChipsTests.xctest */,
+				CFEF37F11F88AD8C0028B68F /* fishAndChipsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFEF37D41F88AD8C0028B68F /* fishAndChips */ = {
+			isa = PBXGroup;
+			children = (
+				CFEF37D51F88AD8C0028B68F /* AppDelegate.swift */,
+				CFEF37D71F88AD8C0028B68F /* ViewController.swift */,
+				CFEF37D91F88AD8C0028B68F /* Main.storyboard */,
+				CFEF37DC1F88AD8C0028B68F /* Assets.xcassets */,
+				CFEF37DE1F88AD8C0028B68F /* LaunchScreen.storyboard */,
+				CFEF37E11F88AD8C0028B68F /* Info.plist */,
+				CFEF38151F88B5E40028B68F /* BridgeViewController.h */,
+				CFEF38161F88B5E40028B68F /* BridgeViewController.m */,
+				CFEF38141F88B5E40028B68F /* fishAndChips-Bridging-Header.h */,
+			);
+			path = fishAndChips;
+			sourceTree = "<group>";
+		};
+		CFEF37E91F88AD8C0028B68F /* fishAndChipsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFEF37EA1F88AD8C0028B68F /* fishAndChipsTests.swift */,
+				CFEF37EC1F88AD8C0028B68F /* Info.plist */,
+			);
+			path = fishAndChipsTests;
+			sourceTree = "<group>";
+		};
+		CFEF37F41F88AD8C0028B68F /* fishAndChipsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFEF37F51F88AD8C0028B68F /* fishAndChipsUITests.swift */,
+				CFEF37F71F88AD8C0028B68F /* Info.plist */,
+			);
+			path = fishAndChipsUITests;
+			sourceTree = "<group>";
+		};
+		CFEF38091F88B2410028B68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFEF380E1F88B2900028B68F /* SpotifyAudioPlayback.framework */,
+				CFEF380F1F88B2900028B68F /* SpotifyAuthentication.framework */,
+				CFEF38101F88B2900028B68F /* SpotifyMetadata.framework */,
+				CFEF380C1F88B2580028B68F /* SystemConfiguration.framework */,
+				CFEF380A1F88B2420028B68F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFEF37D11F88AD8C0028B68F /* fishAndChips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFEF37FA1F88AD8C0028B68F /* Build configuration list for PBXNativeTarget "fishAndChips" */;
+			buildPhases = (
+				CFEF37CE1F88AD8C0028B68F /* Sources */,
+				CFEF37CF1F88AD8C0028B68F /* Frameworks */,
+				CFEF37D01F88AD8C0028B68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fishAndChips;
+			productName = fishAndChips;
+			productReference = CFEF37D21F88AD8C0028B68F /* fishAndChips.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFEF37E51F88AD8C0028B68F /* fishAndChipsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFEF37FD1F88AD8C0028B68F /* Build configuration list for PBXNativeTarget "fishAndChipsTests" */;
+			buildPhases = (
+				CFEF37E21F88AD8C0028B68F /* Sources */,
+				CFEF37E31F88AD8C0028B68F /* Frameworks */,
+				CFEF37E41F88AD8C0028B68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFEF37E81F88AD8C0028B68F /* PBXTargetDependency */,
+			);
+			name = fishAndChipsTests;
+			productName = fishAndChipsTests;
+			productReference = CFEF37E61F88AD8C0028B68F /* fishAndChipsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFEF37F01F88AD8C0028B68F /* fishAndChipsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFEF38001F88AD8C0028B68F /* Build configuration list for PBXNativeTarget "fishAndChipsUITests" */;
+			buildPhases = (
+				CFEF37ED1F88AD8C0028B68F /* Sources */,
+				CFEF37EE1F88AD8C0028B68F /* Frameworks */,
+				CFEF37EF1F88AD8C0028B68F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFEF37F31F88AD8C0028B68F /* PBXTargetDependency */,
+			);
+			name = fishAndChipsUITests;
+			productName = fishAndChipsUITests;
+			productReference = CFEF37F11F88AD8C0028B68F /* fishAndChipsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFEF37CA1F88AD8C0028B68F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jiayue Li";
+				TargetAttributes = {
+					CFEF37D11F88AD8C0028B68F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DJW83MEF6R;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					CFEF37E51F88AD8C0028B68F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DJW83MEF6R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CFEF37D11F88AD8C0028B68F;
+					};
+					CFEF37F01F88AD8C0028B68F = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DJW83MEF6R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CFEF37D11F88AD8C0028B68F;
+					};
+				};
+			};
+			buildConfigurationList = CFEF37CD1F88AD8C0028B68F /* Build configuration list for PBXProject "fishAndChips" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFEF37C91F88AD8C0028B68F;
+			productRefGroup = CFEF37D31F88AD8C0028B68F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFEF37D11F88AD8C0028B68F /* fishAndChips */,
+				CFEF37E51F88AD8C0028B68F /* fishAndChipsTests */,
+				CFEF37F01F88AD8C0028B68F /* fishAndChipsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFEF37D01F88AD8C0028B68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEF37E01F88AD8C0028B68F /* LaunchScreen.storyboard in Resources */,
+				CFEF37DD1F88AD8C0028B68F /* Assets.xcassets in Resources */,
+				CFEF37DB1F88AD8C0028B68F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEF37E41F88AD8C0028B68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEF37EF1F88AD8C0028B68F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFEF37CE1F88AD8C0028B68F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEF38171F88B5E40028B68F /* BridgeViewController.m in Sources */,
+				CFEF37D81F88AD8C0028B68F /* ViewController.swift in Sources */,
+				CFEF37D61F88AD8C0028B68F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEF37E21F88AD8C0028B68F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEF37EB1F88AD8C0028B68F /* fishAndChipsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFEF37ED1F88AD8C0028B68F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEF37F61F88AD8C0028B68F /* fishAndChipsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFEF37E81F88AD8C0028B68F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFEF37D11F88AD8C0028B68F /* fishAndChips */;
+			targetProxy = CFEF37E71F88AD8C0028B68F /* PBXContainerItemProxy */;
+		};
+		CFEF37F31F88AD8C0028B68F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFEF37D11F88AD8C0028B68F /* fishAndChips */;
+			targetProxy = CFEF37F21F88AD8C0028B68F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFEF37D91F88AD8C0028B68F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFEF37DA1F88AD8C0028B68F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFEF37DE1F88AD8C0028B68F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFEF37DF1F88AD8C0028B68F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFEF37F81F88AD8C0028B68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFEF37F91F88AD8C0028B68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFEF37FB1F88AD8C0028B68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = DJW83MEF6R;
+				INFOPLIST_FILE = fishAndChips/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = techSide.fishAndChips;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fishAndChips/fishAndChips-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CFEF37FC1F88AD8C0028B68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = DJW83MEF6R;
+				INFOPLIST_FILE = fishAndChips/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = techSide.fishAndChips;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fishAndChips/fishAndChips-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CFEF37FE1F88AD8C0028B68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DJW83MEF6R;
+				INFOPLIST_FILE = fishAndChipsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = techSide.fishAndChipsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fishAndChips.app/fishAndChips";
+			};
+			name = Debug;
+		};
+		CFEF37FF1F88AD8C0028B68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DJW83MEF6R;
+				INFOPLIST_FILE = fishAndChipsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = techSide.fishAndChipsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fishAndChips.app/fishAndChips";
+			};
+			name = Release;
+		};
+		CFEF38011F88AD8C0028B68F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DJW83MEF6R;
+				INFOPLIST_FILE = fishAndChipsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = techSide.fishAndChipsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = fishAndChips;
+			};
+			name = Debug;
+		};
+		CFEF38021F88AD8C0028B68F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DJW83MEF6R;
+				INFOPLIST_FILE = fishAndChipsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = techSide.fishAndChipsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = fishAndChips;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFEF37CD1F88AD8C0028B68F /* Build configuration list for PBXProject "fishAndChips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEF37F81F88AD8C0028B68F /* Debug */,
+				CFEF37F91F88AD8C0028B68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFEF37FA1F88AD8C0028B68F /* Build configuration list for PBXNativeTarget "fishAndChips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEF37FB1F88AD8C0028B68F /* Debug */,
+				CFEF37FC1F88AD8C0028B68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFEF37FD1F88AD8C0028B68F /* Build configuration list for PBXNativeTarget "fishAndChipsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEF37FE1F88AD8C0028B68F /* Debug */,
+				CFEF37FF1F88AD8C0028B68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFEF38001F88AD8C0028B68F /* Build configuration list for PBXNativeTarget "fishAndChipsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEF38011F88AD8C0028B68F /* Debug */,
+				CFEF38021F88AD8C0028B68F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFEF37CA1F88AD8C0028B68F /* Project object */;
+}
