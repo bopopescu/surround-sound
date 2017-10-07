@@ -1,9 +1,22 @@
 ########### Python 3.6 #############
 import http.client, urllib.request, urllib.parse, urllib.error, base64, json
+import requests
 
 ###############################################
 #### Update or verify the following values. ###
 ###############################################
+
+def analyze_tone(text):
+    username = 'df2b64b3-62e3-4bce-81b7-4d9e6a033fdc'
+    password = 'Ml46ZGhmHmlJ'
+    watsonUrl = 'https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21'
+    headers = {"content-type": "text/plain"}
+    try:
+        r = requests.post(watsonUrl, auth=(username,password),headers = headers,
+         data=data)
+        return r.text
+    except:
+        return False
 
 # Replace the subscription_key string value with your valid subscription key.
 subscription_key = 'e4b9a137799440129d7ce61b414c70b2'
@@ -31,7 +44,7 @@ params = urllib.parse.urlencode({
 })
 
 # Replace the three dots below with the URL of a JPEG image of a celebrity.
-body = "{'url':'https://upload.wikimedia.org/wikipedia/commons/1/12/Broadway_and_Times_Square_by_night.jpg'}"
+body = "{'url':'https://moderatorsampleimages.blob.core.windows.net/samples/img_1.png'}"
 
 try:
     # Execute the REST API call and get the response.
@@ -48,7 +61,10 @@ try:
     stringTags = ""
     for tag in tags:
         stringTags = stringTags + " " + tag
-    print(stringTags)
+    results = analyze_tone(stringTags)
+    if results != False:
+        parsed = json.loads(results)
+        print(parsed["document_tone"]['tones'][0]['tone_name'])
     conn.close()
 
 except Exception as e:
