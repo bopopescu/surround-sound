@@ -38,17 +38,21 @@ function generateVideo(){
     })
 }
 
-function firstFunction(_callback){
+function firstFunction(genre, _callback){
     // do some asynchronous work
     // and when the asynchronous stuff is complete
-    spotify.authenticate("Katy Perry")
+    spotify.authenticate(genre)
     _callback();
 }
 
-function secondFunction(){
+function secondFunction(genre){
     // call first function and pass in a callback function which
     // first function runs when it has completed
-    firstFunction(generateVideo);
+    firstFunction(genre, generateVideo);
 }
 
-secondFunction()
+module.exports = {
+  firstFunction,
+  secondFunction,
+  generateVideo
+}

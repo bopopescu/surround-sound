@@ -1,40 +1,4 @@
-// // Imports the Google Cloud client library
-// const Storage = require('@google-cloud/storage');
-// const GOOGLE_APPLICATION_CREDENTIALS = './calhacks-cc6b4c9dd3fa.json'
-//
-// const filename = './jaj-ny-john.mp4'
-// const bucketName = 'tester'
-//
-// google.auth.getApplicationDefault(function(err, authClient) {
-// 	if (err) {
-// 		return cb(err);
-// 	}
-// });
-//
-// if (authClient.createScopedRequired &&
-// 	authClient.createScopedRequired()) {
-// 	authClient = authClient.createScoped(
-// 		['https://www.googleapis.com/auth/devstorage.read_write']);
-// }
-//
-// var storage = google.storage('v1');
-// storage.buckets.list({
-// 	auth: authClient,
-// 	project: projectId
-// }, cb);
-//
-//
-// // Uploads a local file to the bucket
-// storage
-// 	.bucket(bucketName)
-// 	.upload(filename)
-// 	.then(() => {
-// 		console.log(`${filename} uploaded to ${bucketName}.`);
-// 	})
-// 	.catch(err => {
-// 		console.error('ERROR:', err);
-// 	});
-
+const video = require('./video.js')
 
 function authCloudExplicit () {
   // [START auth_cloud_explicit]
@@ -49,7 +13,7 @@ function authCloudExplicit () {
   });
 
   const filename = './jaj-ny-john.mp4'
-  const bucketName = 'calhacks'
+  const bucketName = 'calhacks_moosic'
   // Makes an authenticated API request.
   storage
   	.bucket(bucketName)
@@ -60,38 +24,17 @@ function authCloudExplicit () {
   	.catch(err => {
   		console.error('ERROR:', err);
   	});
-  // storage
-  //   .getBuckets()
-  //   .then((results) => {
-  //     const buckets = results[0];
-  //
-  //     console.log('Buckets:');
-  //     buckets.forEach((bucket) => {
-  //       console.log(bucket.name);
-  //     });
-  //   })
-  //   .catch((err) => {
-  //     console.error('ERROR:', err);
-  //   });
-  // [END auth_cloud_explicit]
 }
 
-//authCloudImplicit()
-authCloudExplicit()
-// const Storage = require('@google-cloud/storage');
-//
-// var storage = google.storage('v1');
-// storage.buckets.list({
-// 	auth: authClient,
-// 	project: projectId
-// }, cb);
-//
-// storage
-// 	.bucket(bucketName)
-// 	.upload(filename)
-// 	.then(() => {
-// 		console.log(`${filename} uploaded to ${bucketName}.`);
-// 	})
-// 	.catch(err => {
-// 		console.error('ERROR:', err);
-// 	});
+function firstFunction(genre, _callback){
+    // do some asynchronous work
+    // and when the asynchronous stuff is complete
+    video.secondFunction(genre)
+    _callback();
+}
+
+function secondFunction(genre){
+    // call first function and pass in a callback function which
+    // first function runs when it has completed
+    firstFunction(genre, authCloudExplicit);
+}

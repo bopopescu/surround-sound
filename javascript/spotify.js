@@ -9,7 +9,7 @@ var spotifyApi = new SpotifyWebApi({
 
 
 function generateSong(artist){
-  var title = 'artist:'+artist
+  var title = 'genre:'+artist
   spotifyApi.searchTracks(title)
     .then(function(data) {
       var firstPage = data.body.tracks.items;
