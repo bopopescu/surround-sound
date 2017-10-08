@@ -16,10 +16,10 @@
 		CFEF37F61F88AD8C0028B68F /* fishAndChipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEF37F51F88AD8C0028B68F /* fishAndChipsUITests.swift */; };
 		CFEF380B1F88B2420028B68F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF380A1F88B2420028B68F /* AVFoundation.framework */; };
 		CFEF380D1F88B2580028B68F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF380C1F88B2580028B68F /* SystemConfiguration.framework */; };
-		CFEF38111F88B2900028B68F /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF380E1F88B2900028B68F /* SpotifyAudioPlayback.framework */; };
-		CFEF38121F88B2900028B68F /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF380F1F88B2900028B68F /* SpotifyAuthentication.framework */; };
-		CFEF38131F88B2900028B68F /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF38101F88B2900028B68F /* SpotifyMetadata.framework */; };
-		CFEF38171F88B5E40028B68F /* BridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEF38161F88B5E40028B68F /* BridgeViewController.m */; };
+		CFEF38591F898BFD0028B68F /* BridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEF38581F898BFD0028B68F /* BridgeViewController.m */; };
+		CFEF385B1F8994D20028B68F /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF380E1F88B2900028B68F /* SpotifyAudioPlayback.framework */; };
+		CFEF385C1F8994D20028B68F /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF380F1F88B2900028B68F /* SpotifyAuthentication.framework */; };
+		CFEF385D1F8994D20028B68F /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF38101F88B2900028B68F /* SpotifyMetadata.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,9 @@
 		CFEF380E1F88B2900028B68F /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAudioPlayback.framework; path = "../../../../Downloads/ios-sdk-master/SpotifyAudioPlayback.framework"; sourceTree = "<group>"; };
 		CFEF380F1F88B2900028B68F /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyAuthentication.framework; path = "../../../../Downloads/ios-sdk-master/SpotifyAuthentication.framework"; sourceTree = "<group>"; };
 		CFEF38101F88B2900028B68F /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyMetadata.framework; path = "../../../../Downloads/ios-sdk-master/SpotifyMetadata.framework"; sourceTree = "<group>"; };
-		CFEF38141F88B5E40028B68F /* fishAndChips-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fishAndChips-Bridging-Header.h"; sourceTree = "<group>"; };
-		CFEF38151F88B5E40028B68F /* BridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeViewController.h; sourceTree = "<group>"; };
-		CFEF38161F88B5E40028B68F /* BridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeViewController.m; sourceTree = "<group>"; };
+		CFEF38571F898BFD0028B68F /* BridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeViewController.h; sourceTree = "<group>"; };
+		CFEF38581F898BFD0028B68F /* BridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgeViewController.m; sourceTree = "<group>"; };
+		CFEF385A1F898C480028B68F /* fishAndChips-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fishAndChips-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFEF38111F88B2900028B68F /* SpotifyAudioPlayback.framework in Frameworks */,
-				CFEF38121F88B2900028B68F /* SpotifyAuthentication.framework in Frameworks */,
-				CFEF38131F88B2900028B68F /* SpotifyMetadata.framework in Frameworks */,
+				CFEF385B1F8994D20028B68F /* SpotifyAudioPlayback.framework in Frameworks */,
+				CFEF385C1F8994D20028B68F /* SpotifyAuthentication.framework in Frameworks */,
+				CFEF385D1F8994D20028B68F /* SpotifyMetadata.framework in Frameworks */,
 				CFEF380D1F88B2580028B68F /* SystemConfiguration.framework in Frameworks */,
 				CFEF380B1F88B2420028B68F /* AVFoundation.framework in Frameworks */,
 			);
@@ -120,12 +120,12 @@
 				CFEF37D51F88AD8C0028B68F /* AppDelegate.swift */,
 				CFEF37D71F88AD8C0028B68F /* ViewController.swift */,
 				CFEF37D91F88AD8C0028B68F /* Main.storyboard */,
+				CFEF385A1F898C480028B68F /* fishAndChips-Bridging-Header.h */,
 				CFEF37DC1F88AD8C0028B68F /* Assets.xcassets */,
 				CFEF37DE1F88AD8C0028B68F /* LaunchScreen.storyboard */,
 				CFEF37E11F88AD8C0028B68F /* Info.plist */,
-				CFEF38151F88B5E40028B68F /* BridgeViewController.h */,
-				CFEF38161F88B5E40028B68F /* BridgeViewController.m */,
-				CFEF38141F88B5E40028B68F /* fishAndChips-Bridging-Header.h */,
+				CFEF38571F898BFD0028B68F /* BridgeViewController.h */,
+				CFEF38581F898BFD0028B68F /* BridgeViewController.m */,
 			);
 			path = fishAndChips;
 			sourceTree = "<group>";
@@ -298,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFEF38171F88B5E40028B68F /* BridgeViewController.m in Sources */,
+				CFEF38591F898BFD0028B68F /* BridgeViewController.m in Sources */,
 				CFEF37D81F88AD8C0028B68F /* ViewController.swift in Sources */,
 				CFEF37D61F88AD8C0028B68F /* AppDelegate.swift in Sources */,
 			);
