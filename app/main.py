@@ -15,7 +15,7 @@
 # [START app]
 import logging
 import json
-from hi import hey
+from genreMood import main
 
 from flask import Flask, request
 
@@ -25,7 +25,7 @@ app = Flask(__name__)
 @app.route('/', methods=['POST'])
 def hello():
     """Return a friendly HTTP greeting."""
-    return hey()
+    return main()
 
 @app.route('/topic', methods=['POST'])
 def find_topic():

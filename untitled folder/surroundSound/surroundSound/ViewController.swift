@@ -35,7 +35,8 @@ class ViewController: UIViewController {
             let responseString = String(data: data, encoding: .utf8)
             print("responseString = \(responseString)")
             let res = self.convertToDictionary(text: responseString!)
-            print(res)
+            let resdict = res as! [String:Any]
+            print(resdict)
         }
         task.resume()
         
