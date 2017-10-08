@@ -16,16 +16,22 @@ struct Constants{
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate  {
     
-    @IBOutlet weak var selectButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
-    var imageName: String = ""
+    var imageName: String?
+    var spotify: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(imageName!)
+        print(spotify!)
+        imageView.image = UIImage(named: imageName!)
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-//    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+    @IBAction func generateSong(_ sender: Any) {
+        UIApplication.shared.openURL(NSURL(string:spotify!)! as URL)
+    }
+    //    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
 //        dismiss(animated: false, completion: nil)
 //    }
 //    

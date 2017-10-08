@@ -46,10 +46,10 @@ function main(genre, pic1, pic2, pic3) {
 		})
 }
 
-main("pop", __dirname + '/pics/jaj.png',
-  __dirname + '/pics/ny.png',
-  __dirname + '/pics/john.png')
+main("pop", __dirname + '/pics/ny.jpg',
+  __dirname + '/pics/party.jpg',
+  __dirname + '/pics/us.jpg')
 
-  module.exports{
+  module.exports = {
     main
   }
