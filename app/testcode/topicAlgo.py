@@ -21,7 +21,6 @@ def determineGenreOrMood(tags):
             for genre in dictionary[tag].keys():
                 if (dictionary[tag][genre] == 1):
                     if genre in genreToWord:
-                        print(genre)
                         genreToWord[genre] +=1
                     else:
                         genreToWord[genre] = 1
@@ -36,7 +35,3 @@ def determineGenreOrMood(tags):
     if (len(genreToWord) == 0):
         return None
     return random.choice(biggestGenre)
-
-
-
-print(determineMusic((['art', 'urban'])))
