@@ -25,12 +25,15 @@ app = Flask(__name__)
 @app.route('/', methods=['POST'])
 def hello():
     """Return a friendly HTTP greeting."""
-    return main()
+    return "hi"
 
 @app.route('/topic', methods=['POST'])
 def find_topic():
     j = request.get_json()
-    return json.dumps(j)
+    print(j)
+    print(j["url"])
+    spotifyLink = main(j["url"])
+    return json.dumps(spotifyLink)
 
 
 @app.errorhandler(500)
