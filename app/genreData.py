@@ -26,7 +26,7 @@ moodMappings = {"happy": happy, "calm": calm, "love": love, "sad": sad, "angry":
 
 moodToPlaylist = {"anger": ["Life Sucks", "Down in The Dump", "Breakup Songs", "Alone Again"], "contempt": ["Alone Again", "Down In The Dump", "Breakup Songs"], "disgust": ["Breakup Songs", "Swagger"], "fear": ["Confidence Boost"], "happiness": ["Soak Up The Sun", "Happy Folk", "Songs to Sing in the Shower", "Good Vibes", "Have a Great Day!", "Happy Hits!", "Feelin' Good", "Young & Free"], "neutral": ["Chillin' On a Dirt Road", "Relax & Unwind", "Autumn Acoustic", "Piano in the Background", "Fall Feels", "Calm Vibes", "Afternoon Acoustics"], "sadness": ["All The Feels"], "surprise": ["Young & Free", "Mood Booster"]}
 
-genreToPlaylist = {"hiphop": ["Hip-Hop"], "pop" : ["Pop"]. "popculture":["Pop Culture"], "country": ["Culture"], "workout": ["workout", "Electronic/Dance"], "chill": ["Christian"], "electronic": ["Electronic/Dance"], "rock": ["Rock", "R&B"], "focus": ["Jazz"], "religious": ["Christian"], "indie": [], "outside": ["Jazz", "Travel", "Blues"]}
+Genretoplaylist = {"hiphop": ["Hip-Hop"], "pop" : ["Pop"]. "popculture":["Pop Culture"], "country": ["Culture"], "workout": ["workout", "Electronic/Dance"], "chill": ["Christian"], "electronic": ["Electronic/Dance"], "rock": ["Rock", "R&B"], "focus": ["Jazz"], "religious": ["Christian"], "indie": [], "outside": ["Jazz", "Travel", "Blues"]}
 
 
 vocabDict = {}
