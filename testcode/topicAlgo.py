@@ -17,13 +17,13 @@ def determineMusic(tags):
 def determineGenreOrMood(tags):
     genreToWord = {}
     for tag in tags:
-        for genre in dictionary[tag].keys():
-            if (dictionary[tag][genre] == 1):
-                if genre in genreToWord:
-                    print(genre)
-                    genreToWord[genre] +=1
-                else:
-                    genreToWord[genre] = 1
+        if tag in dictionary:
+            for genre in dictionary[tag].keys():
+                if (dictionary[tag][genre] == 1):
+                    if genre in genreToWord:
+                        genreToWord[genre] +=1
+                    else:
+                        genreToWord[genre] = 1
     total = float(sum(genreToWord.values()))
     for genre in genreToWord:
         genreToWord[genre] = genreToWord[genre] / total
@@ -35,7 +35,3 @@ def determineGenreOrMood(tags):
     if (len(genreToWord) == 0):
         return None
     return random.choice(biggestGenre)
-
-
-
-print(determineMusic((['art', 'urban'])))

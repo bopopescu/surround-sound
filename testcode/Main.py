@@ -1,6 +1,7 @@
-import topicAlgo
-import testmicrosoftazure
+from testmicrosoftazure import generateToneWord
+from topicAlgo import determineGenreOrMood
 
 def main():
-    toneWords = analyze_tone("I don't know confusion something joy")
-    print(determineGenreOrMood(toneWords))
+    toneWords = generateToneWord()
+    return determineGenreOrMood(toneWords)
+main()
