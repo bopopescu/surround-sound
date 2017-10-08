@@ -18,7 +18,7 @@ def analyze_tone(text):
     except:
         return False
 
-def getToneWords():
+def getToneWords(url):
     # Replace the subscription_key string value with your valid subscription key.
     subscription_key = 'e4b9a137799440129d7ce61b414c70b2'
 
@@ -45,8 +45,8 @@ def getToneWords():
     })
 
     # Replace the three dots below with the URL of a JPEG image of a celebrity.
-    body = "{'url':'https://moderatorsampleimages.blob.core.windows.net/samples/img_1.png'}"
-
+    body = "{'url':'" + url + "'}"
+    print("BODY " + body)
     try:
         # Execute the REST API call and get the response.
         conn = http.client.HTTPSConnection('westcentralus.api.cognitive.microsoft.com')

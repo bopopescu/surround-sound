@@ -52,9 +52,10 @@ def determinePlaylist(toneWord):
 
         return "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXcBWIGoYBM5M"
 
-def main():
-    toneWords = getToneWords()
+def main(url):
+    toneWords = getToneWords(url)
     #print(eval(toneWords)['description'])
+    print(toneWords)
     toneWord = determineGenreOrMood(toneWords)
     print(toneWord)
     return determinePlaylist(toneWord)
